@@ -1,0 +1,33 @@
+.nav{
+    &-container{
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-header{
+        height: 100%;
+        cursor: pointer;
+        p{
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 25px;
+            color: #4f4e4d;
+            &:hover{
+                fill: #b69778;
+            }
+        }
+    }
+    &-social{
+        display: flex;
+        a{
+            text-decoration: none;
+            fill: #4f4e4d;
+            margin: 5px 20px;
+            &:hover{
+                fill: #b69778;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+    }
+}

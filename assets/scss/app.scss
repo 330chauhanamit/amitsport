@@ -1,0 +1,27 @@
+@import "homepage";
+@import "navbar";
+:root {
+  @media (min-width:767px) {
+    cursor: none !important;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+  }
+}
+:root:before {
+    @media (min-width:767px) {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 10vmax at var(--cursorX) var(--cursorY),
+      rgba(209, 209, 209, 0) 0%,
+      rgba(153, 145, 145, 0.25) 80%,
+      rgba(0, 0, 0, 0.25) 100%
+    )
+    
+  }
+  }
